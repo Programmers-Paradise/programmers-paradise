@@ -1,6 +1,6 @@
-import { TeamCard } from "@/components/team-card"
-import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { TeamCard } from "@/components/team-card";
+import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function TeamPage() {
   return (
@@ -14,8 +14,9 @@ export default function TeamPage() {
               Meet the Minds Behind Programmers&apos; Paradise
             </h1>
             <p className="text-muted-foreground md:text-lg max-w-[700px] mx-auto">
-              Our dedicated team of tech enthusiasts, innovators, and leaders working together to create a vibrant
-              technical community at CSVTU UTD-1 Bhilai.
+              Our dedicated team of tech enthusiasts, innovators, and leaders
+              working together to create a vibrant technical community at CSVTU
+              UTD-1 Bhilai.
             </p>
           </div>
         </div>
@@ -120,7 +121,7 @@ export default function TeamPage() {
                   linkedin="https://linkedin.com"
                 />
                 <TeamCard
-                  name="Rajat Singh"
+                  name="Manoj Kumar Sinha"
                   role="Nextronix (Robotics Club) Lead"
                   image="/placeholder.svg?height=300&width=300"
                   bio="Robotics and IoT specialist with experience in building automated systems and devices."
@@ -211,10 +212,13 @@ export default function TeamPage() {
       <section className="py-12 md:py-16 bg-gradient-to-br from-purple-500/10 via-transparent to-cyan-500/10">
         <div className="container">
           <div className="max-w-[800px] mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">Join Our Team</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-6">
+              Join Our Team
+            </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-[600px] mx-auto">
-              Interested in becoming a part of Programmers' Paradise team? We're always looking for passionate
-              individuals to join our community and help organize events, workshops, and initiatives.
+              Interested in becoming a part of Programmers' Paradise team? We're
+              always looking for passionate individuals to join our community
+              and help organize events, workshops, and initiatives.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
@@ -228,5 +232,5 @@ export default function TeamPage() {
         </div>
       </section>
     </>
-  )
+  );
 }

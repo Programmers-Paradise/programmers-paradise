@@ -70,22 +70,37 @@ export default function MatlabClubPage() {
           </TabsContent>
           <TabsContent value="team" className="space-y-4 pt-4">
             <h3 className="text-2xl font-bold">Meet Our Team</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="flex justify-center gap-4">
               {teamMembers.map((member) => (
                 <Card key={member.name} className="border border-muted">
                   <CardHeader className="text-center pb-2">
                     <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-2">
                       <img
-                        src={member.avatar || "/placeholder.svg"}
+                        src={member.image || "/placeholder.svg"}
                         alt={member.name}
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <CardTitle className="text-lg">{member.name}</CardTitle>
-                    <CardDescription>{member.role}</CardDescription>
+                    <CardDescription>{member.position}</CardDescription>
                   </CardHeader>
-                  <CardContent className="text-center">
-                    <p className="text-sm text-muted-foreground">{member.bio}</p>
+                  <CardContent className="text-center space-y-1">
+                    <div className="text-sm text-muted-foreground">
+                      <span className="font-semibold">Batch:</span> {member.batch}<br />
+                      <span className="font-semibold">Branch:</span> {member.branch}<br />
+                      <span className="font-semibold">Email:</span> <a href={`mailto:${member.email}`} className="underline">{member.email}</a><br />
+                     
+                    </div>
+                    <div className="flex justify-center gap-2 pt-2">
+                      <a href={member.github} target="_blank" rel="noreferrer" className="hover:underline">
+                        <img src="/placeholder.svg" alt="GitHub" className="inline-block w-5 h-5 mr-1" />
+                        GitHub
+                      </a>
+                      <a href={member.linkedin} target="_blank" rel="noreferrer" className="hover:underline">
+                        <img src="/placeholder.svg" alt="LinkedIn" className="inline-block w-5 h-5 mr-1" />
+                        LinkedIn
+                      </a>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -245,28 +260,14 @@ const activities = [
 
 const teamMembers = [
   {
-    name: "Dr. Sarah Chen",
-    role: "Faculty Advisor",
-    bio: "Professor of Engineering with expertise in computational modeling",
-    avatar: "/placeholder.svg?height=200&width=200",
-  },
-  {
-    name: "Thomas Wilson",
-    role: "Club President",
-    bio: "PhD candidate specializing in signal processing",
-    avatar: "/placeholder.svg?height=200&width=200",
-  },
-  {
-    name: "Amina Hassan",
-    role: "Vice President",
-    bio: "Mechanical engineering student with focus on simulation",
-    avatar: "/placeholder.svg?height=200&width=200",
-  },
-  {
-    name: "Carlos Rodriguez",
-    role: "Workshop Coordinator",
-    bio: "MathWorks certified MATLAB professional",
-    avatar: "/placeholder.svg?height=200&width=200",
+    name: "Jai Keshav Sharma",
+    position: "President(MATLAB)",
+    batch: "2023-2027",
+    branch: "CSE(AI)",
+    email: "jai.300012723027@csvtu.ac.in",
+    github: "https://github.com/Jai-Keshav-Sharma",
+    linkedin: "https://www.linkedin.com/in/jai-keshav-sharma",
+    image: "/Technical_Team_Photos/JaiKeshavSharma.webp"
   },
 ]
 

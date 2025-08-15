@@ -1,10 +1,27 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Cpu, Wrench, Lightbulb, Calendar, MapPin, Clock, Github, Award } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Cpu,
+  Wrench,
+  Lightbulb,
+  Calendar,
+  MapPin,
+  Clock,
+  Github,
+  Award,
+  Linkedin,
+} from "lucide-react";
 
 export default function NextronixPage() {
   return (
@@ -15,10 +32,13 @@ export default function NextronixPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <Badge>Robotics Club</Badge>
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nextronix</h1>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Nextronix
+              </h1>
               <p className="text-muted-foreground md:text-lg">
-                The official robotics and IoT club of Programmers' Paradise at CSVTU UTD-1 Bhilai, dedicated to
-                exploring the exciting world of robotics, automation, embedded systems, and Internet of Things.
+                The official robotics and IoT club of Programmers' Paradise at
+                CSVTU UTD-1 Bhilai, dedicated to exploring the exciting world of
+                robotics, automation, embedded systems, and Internet of Things.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild>
@@ -46,9 +66,12 @@ export default function NextronixPage() {
       <section className="py-12 md:py-16 bg-muted/50">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold tracking-tight">About Nextronix</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              About Nextronix
+            </h2>
             <p className="text-muted-foreground mt-2 max-w-[700px] mx-auto">
-              Exploring the intersection of hardware and software through hands-on projects
+              Exploring the intersection of hardware and software through
+              hands-on projects
             </p>
           </div>
 
@@ -62,8 +85,9 @@ export default function NextronixPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Design, build, and program robots for various applications, from simple line followers to complex
-                  autonomous systems capable of performing specific tasks.
+                  Design, build, and program robots for various applications,
+                  from simple line followers to complex autonomous systems
+                  capable of performing specific tasks.
                 </p>
               </CardContent>
             </Card>
@@ -77,8 +101,9 @@ export default function NextronixPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Develop Internet of Things devices and embedded systems that connect the physical world to the digital
-                  realm, creating smart solutions for real-world problems.
+                  Develop Internet of Things devices and embedded systems that
+                  connect the physical world to the digital realm, creating
+                  smart solutions for real-world problems.
                 </p>
               </CardContent>
             </Card>
@@ -92,8 +117,9 @@ export default function NextronixPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Apply engineering principles and creative thinking to develop innovative solutions for real-world
-                  challenges through robotics and automation technologies.
+                  Apply engineering principles and creative thinking to develop
+                  innovative solutions for real-world challenges through
+                  robotics and automation technologies.
                 </p>
               </CardContent>
             </Card>
@@ -123,12 +149,16 @@ export default function NextronixPage() {
               <Card>
                 <CardHeader>
                   <CardTitle>Hands-on Workshops</CardTitle>
-                  <CardDescription>Learn through practical, hands-on sessions</CardDescription>
+                  <CardDescription>
+                    Learn through practical, hands-on sessions
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p>
-                    Our workshops provide practical, hands-on experience in robotics, IoT, and embedded systems. From
-                    beginner to advanced levels, we cover a wide range of topics to help members build their skills.
+                    Our workshops provide practical, hands-on experience in
+                    robotics, IoT, and embedded systems. From beginner to
+                    advanced levels, we cover a wide range of topics to help
+                    members build their skills.
                   </p>
                   <h4 className="font-medium">Recent Workshops:</h4>
                   <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
@@ -155,13 +185,16 @@ export default function NextronixPage() {
               <Card>
                 <CardHeader>
                   <CardTitle>Robotics Competitions</CardTitle>
-                  <CardDescription>Showcase your skills in local and national competitions</CardDescription>
+                  <CardDescription>
+                    Showcase your skills in local and national competitions
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p>
-                    We regularly participate in robotics competitions at local, state, and national levels. These
-                    competitions provide an excellent opportunity for members to apply their skills, work in teams, and
-                    gain recognition.
+                    We regularly participate in robotics competitions at local,
+                    state, and national levels. These competitions provide an
+                    excellent opportunity for members to apply their skills,
+                    work in teams, and gain recognition.
                   </p>
                   <h4 className="font-medium">Competition Categories:</h4>
                   <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
@@ -188,13 +221,16 @@ export default function NextronixPage() {
               <Card>
                 <CardHeader>
                   <CardTitle>Collaborative Projects</CardTitle>
-                  <CardDescription>Work on innovative projects with fellow enthusiasts</CardDescription>
+                  <CardDescription>
+                    Work on innovative projects with fellow enthusiasts
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p>
-                    We encourage members to collaborate on innovative projects that solve real-world problems. These
-                    projects help members apply their knowledge, develop teamwork skills, and build an impressive
-                    portfolio.
+                    We encourage members to collaborate on innovative projects
+                    that solve real-world problems. These projects help members
+                    apply their knowledge, develop teamwork skills, and build an
+                    impressive portfolio.
                   </p>
                   <h4 className="font-medium">Project Areas:</h4>
                   <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
@@ -221,13 +257,16 @@ export default function NextronixPage() {
               <Card>
                 <CardHeader>
                   <CardTitle>Mentorship Program</CardTitle>
-                  <CardDescription>Learn from experienced members and industry experts</CardDescription>
+                  <CardDescription>
+                    Learn from experienced members and industry experts
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p>
-                    Our mentorship program connects beginners with experienced members and industry professionals. This
-                    program helps new members quickly develop their skills and provides guidance for their projects and
-                    career paths.
+                    Our mentorship program connects beginners with experienced
+                    members and industry professionals. This program helps new
+                    members quickly develop their skills and provides guidance
+                    for their projects and career paths.
                   </p>
                   <h4 className="font-medium">Mentorship Benefits:</h4>
                   <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
@@ -254,7 +293,7 @@ export default function NextronixPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-12 md:py-16 bg-muted/50">
+      <section className="flex justify-center gap-4 py-12 md:py-16 bg-muted/50">
         <div className="container">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tight">Our Team</h2>
@@ -267,28 +306,52 @@ export default function NextronixPage() {
             <Card>
               <div className="aspect-square overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Rajat Singh"
+                  src="/Technical_Team_Photos/MkSinha.webp"
+                  alt="Manoj Kumar Sinha"
                   width={300}
                   height={300}
                   className="object-cover w-full h-full transition-transform hover:scale-105"
                 />
               </div>
               <CardHeader className="p-4">
-                <CardTitle className="text-xl">Rajat Singh</CardTitle>
-                <CardDescription>Club Lead</CardDescription>
+                <CardTitle className="text-xl">Manoj Kumar Sinha</CardTitle>
+                <CardDescription>Nextronix - President</CardDescription>
               </CardHeader>
               <CardContent className="p-4 pt-0 text-sm text-muted-foreground">
                 <p>
-                  Electronics Engineering student with expertise in robotics and embedded systems. Leads the club's
-                  technical initiatives and competitions.
+                  <span className="font-semibold">Batch:</span> 2024-2028
+                  <br />
+                  <span className="font-semibold">Branch:</span> CSE(DS)
+                  <br />
+                  <span className="font-semibold">Email:</span>{" "}
+                  <a href="mailto:mksinha77756@gmail.com" className="underline">
+                    mksinha77756@gmail.com
+                  </a>
+                  
+               
+                 
+                  
                 </p>
               </CardContent>
               <CardFooter className="p-4 flex gap-2">
                 <Button variant="ghost" size="icon" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://github.com/mksinha01"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
+                  </Link>
+                </Button>
+                <Button variant="ghost" size="icon" asChild>
+                  <Link
+                    href="https://www.linkedin.com/in/manoj-sinha-a20b81327/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                    <span className="sr-only">LinkedIn</span>
                   </Link>
                 </Button>
               </CardFooter>
@@ -297,7 +360,7 @@ export default function NextronixPage() {
             <Card>
               <div className="aspect-square overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/Technical_Team_Photos/KavyaSahu2.webp"
                   alt="Ananya Gupta"
                   width={300}
                   height={300}
@@ -305,20 +368,46 @@ export default function NextronixPage() {
                 />
               </div>
               <CardHeader className="p-4">
-                <CardTitle className="text-xl">Ananya Gupta</CardTitle>
-                <CardDescription>Technical Coordinator</CardDescription>
+                <CardTitle className="text-xl">Kavya Sahu</CardTitle>
+                <CardDescription>
+                  Nextronix - Vice President(PR and Outreach)
+                </CardDescription>
               </CardHeader>
               <CardContent className="p-4 pt-0 text-sm text-muted-foreground">
                 <p>
-                  Computer Science student specializing in IoT and sensor networks. Manages the club's technical
-                  workshops and project development.
+                  <span className="font-semibold">Batch:</span> 2024-2028
+                  <br />
+                  <span className="font-semibold">Branch:</span> CSE(AI)
+                  <br />
+                  <span className="font-semibold">Email:</span>{" "}
+                  <a
+                    href="mailto:kavyasahu.0712@gmail.com"
+                    className="underline"
+                  >
+                    kavyasahu.0712@gmail.com
+                  </a>
+                  
                 </p>
               </CardContent>
               <CardFooter className="p-4 flex gap-2">
                 <Button variant="ghost" size="icon" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://github.com/Kavyasahu077"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
+                  </Link>
+                </Button>
+                <Button variant="ghost" size="icon" asChild>
+                  <Link
+                    href="https://www.linkedin.com/in/kavya-sahu-1873a2327"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                    <span className="sr-only">LinkedIn</span>
                   </Link>
                 </Button>
               </CardFooter>
@@ -327,7 +416,7 @@ export default function NextronixPage() {
             <Card>
               <div className="aspect-square overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/Technical_Team_Photos/HridyeshKumar.webp"
                   alt="Vikram Joshi"
                   width={300}
                   height={300}
@@ -335,50 +424,43 @@ export default function NextronixPage() {
                 />
               </div>
               <CardHeader className="p-4">
-                <CardTitle className="text-xl">Vikram Joshi</CardTitle>
-                <CardDescription>Hardware Specialist</CardDescription>
+                <CardTitle className="text-xl">Hridyesh Kumar</CardTitle>
+                <CardDescription>
+                  Nextronix- Vice President(Design & Technical)
+                </CardDescription>
               </CardHeader>
               <CardContent className="p-4 pt-0 text-sm text-muted-foreground">
                 <p>
-                  Mechanical Engineering student with expertise in robot design and fabrication. Leads the hardware
-                  development team for competitions.
+                  <span className="font-semibold">Batch:</span> 2023-2027
+                  <br />
+                  <span className="font-semibold">Branch:</span> CSE(AI)
+                  <br />
+                  <span className="font-semibold">Email:</span>{" "}
+                  <a href="mailto:hkumar0951@gmail.com" className="underline">
+                    hkumar0951@gmail.com
+                  </a>
+                  
                 </p>
               </CardContent>
               <CardFooter className="p-4 flex gap-2">
                 <Button variant="ghost" size="icon" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://github.com/HridyeshKumar"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
                   </Link>
                 </Button>
-              </CardFooter>
-            </Card>
-
-            <Card>
-              <div className="aspect-square overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Priya Sharma"
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-full transition-transform hover:scale-105"
-                />
-              </div>
-              <CardHeader className="p-4">
-                <CardTitle className="text-xl">Priya Sharma</CardTitle>
-                <CardDescription>Software Lead</CardDescription>
-              </CardHeader>
-              <CardContent className="p-4 pt-0 text-sm text-muted-foreground">
-                <p>
-                  Computer Science student focusing on AI and computer vision. Manages the software development for
-                  robotics projects and automation systems.
-                </p>
-              </CardContent>
-              <CardFooter className="p-4 flex gap-2">
                 <Button variant="ghost" size="icon" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
-                    <Github className="h-4 w-4" />
-                    <span className="sr-only">GitHub</span>
+                  <Link
+                    href="https://www.linkedin.com/in/hridyesh-kumar-10a52028a/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                    <span className="sr-only">LinkedIn</span>
                   </Link>
                 </Button>
               </CardFooter>
@@ -391,7 +473,9 @@ export default function NextronixPage() {
       <section className="py-12 md:py-16" id="projects">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold tracking-tight">Featured Projects</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Featured Projects
+            </h2>
             <p className="text-muted-foreground mt-2 max-w-[700px] mx-auto">
               Innovative robotics and IoT solutions developed by our members
             </p>
@@ -415,12 +499,15 @@ export default function NextronixPage() {
                   <Badge variant="secondary">Agriculture</Badge>
                 </div>
                 <CardTitle>Smart Agriculture System</CardTitle>
-                <CardDescription>Automated farming with IoT sensors</CardDescription>
+                <CardDescription>
+                  Automated farming with IoT sensors
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
                 <p>
-                  An IoT-based smart agriculture system that monitors soil moisture, temperature, and sunlight to
-                  automate irrigation and provide insights for optimal crop growth.
+                  An IoT-based smart agriculture system that monitors soil
+                  moisture, temperature, and sunlight to automate irrigation and
+                  provide insights for optimal crop growth.
                 </p>
               </CardContent>
               <CardFooter className="flex justify-between">
@@ -428,7 +515,11 @@ export default function NextronixPage() {
                   <Link href="/projects/smart-agriculture">View Details</Link>
                 </Button>
                 <Button variant="ghost" size="sm" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </Link>
@@ -453,12 +544,15 @@ export default function NextronixPage() {
                   <Badge variant="secondary">Automation</Badge>
                 </div>
                 <CardTitle>Autonomous Delivery Robot</CardTitle>
-                <CardDescription>Campus package delivery system</CardDescription>
+                <CardDescription>
+                  Campus package delivery system
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
                 <p>
-                  An autonomous robot designed to navigate the campus and deliver packages to specific locations.
-                  Features obstacle avoidance, path planning, and secure package compartments.
+                  An autonomous robot designed to navigate the campus and
+                  deliver packages to specific locations. Features obstacle
+                  avoidance, path planning, and secure package compartments.
                 </p>
               </CardContent>
               <CardFooter className="flex justify-between">
@@ -466,7 +560,11 @@ export default function NextronixPage() {
                   <Link href="/projects/delivery-robot">View Details</Link>
                 </Button>
                 <Button variant="ghost" size="sm" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </Link>
@@ -491,12 +589,15 @@ export default function NextronixPage() {
                   <Badge variant="secondary">Environment</Badge>
                 </div>
                 <CardTitle>Smart Waste Management</CardTitle>
-                <CardDescription>IoT-based waste collection optimization</CardDescription>
+                <CardDescription>
+                  IoT-based waste collection optimization
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
                 <p>
-                  An intelligent waste management system that uses sensors to monitor fill levels in bins, optimizes
-                  collection routes, and promotes recycling through a mobile app.
+                  An intelligent waste management system that uses sensors to
+                  monitor fill levels in bins, optimizes collection routes, and
+                  promotes recycling through a mobile app.
                 </p>
               </CardContent>
               <CardFooter className="flex justify-between">
@@ -504,7 +605,11 @@ export default function NextronixPage() {
                   <Link href="/projects/waste-management">View Details</Link>
                 </Button>
                 <Button variant="ghost" size="sm" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </Link>
@@ -525,7 +630,9 @@ export default function NextronixPage() {
       <section className="py-12 md:py-16 bg-muted/50">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold tracking-tight">Upcoming Events</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Upcoming Events
+            </h2>
             <p className="text-muted-foreground mt-2 max-w-[700px] mx-auto">
               Join our workshops, competitions, and tech talks
             </p>
@@ -537,12 +644,17 @@ export default function NextronixPage() {
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge>Workshop</Badge>
-                  <Badge variant="outline" className="bg-green-500/10 text-green-500 border-green-500/20">
+                  <Badge
+                    variant="outline"
+                    className="bg-green-500/10 text-green-500 border-green-500/20"
+                  >
                     Registration Open
                   </Badge>
                 </div>
                 <CardTitle className="mt-4">IoT Workshop Series</CardTitle>
-                <CardDescription>Hands-on workshop on building IoT devices</CardDescription>
+                <CardDescription>
+                  Hands-on workshop on building IoT devices
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm">
@@ -570,7 +682,10 @@ export default function NextronixPage() {
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge>Competition</Badge>
-                  <Badge variant="outline" className="bg-yellow-500/10 text-yellow-500 border-yellow-500/20">
+                  <Badge
+                    variant="outline"
+                    className="bg-yellow-500/10 text-yellow-500 border-yellow-500/20"
+                  >
                     Coming Soon
                   </Badge>
                 </div>
@@ -605,12 +720,17 @@ export default function NextronixPage() {
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge>Tech Talk</Badge>
-                  <Badge variant="outline" className="bg-blue-500/10 text-blue-500 border-blue-500/20">
+                  <Badge
+                    variant="outline"
+                    className="bg-blue-500/10 text-blue-500 border-blue-500/20"
+                  >
                     Free Entry
                   </Badge>
                 </div>
                 <CardTitle className="mt-4">Future of Robotics</CardTitle>
-                <CardDescription>Industry experts discuss emerging trends</CardDescription>
+                <CardDescription>
+                  Industry experts discuss emerging trends
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm">
@@ -646,7 +766,9 @@ export default function NextronixPage() {
       <section className="py-12 md:py-16">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold tracking-tight">Our Achievements</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Our Achievements
+            </h2>
             <p className="text-muted-foreground mt-2 max-w-[700px] mx-auto">
               Celebrating our success in competitions and innovation challenges
             </p>
@@ -664,8 +786,9 @@ export default function NextronixPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Won first place in the National Robotics Championship for our autonomous navigation robot that
-                  demonstrated exceptional precision and efficiency.
+                  Won first place in the National Robotics Championship for our
+                  autonomous navigation robot that demonstrated exceptional
+                  precision and efficiency.
                 </p>
               </CardContent>
             </Card>
@@ -681,8 +804,9 @@ export default function NextronixPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Reached the finals of Smart India Hackathon with our IoT-based smart agriculture system that helps
-                  farmers optimize water usage and crop yield.
+                  Reached the finals of Smart India Hackathon with our IoT-based
+                  smart agriculture system that helps farmers optimize water
+                  usage and crop yield.
                 </p>
               </CardContent>
             </Card>
@@ -694,12 +818,15 @@ export default function NextronixPage() {
                   <Award className="h-6 w-6 text-amber-500" />
                 </div>
                 <CardTitle>Innovation Excellence Award</CardTitle>
-                <CardDescription>State Technical Festival, 2023</CardDescription>
+                <CardDescription>
+                  State Technical Festival, 2023
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Received the Innovation Excellence Award for our smart waste management system that optimizes
-                  collection routes and promotes recycling.
+                  Received the Innovation Excellence Award for our smart waste
+                  management system that optimizes collection routes and
+                  promotes recycling.
                 </p>
               </CardContent>
             </Card>
@@ -708,13 +835,19 @@ export default function NextronixPage() {
       </section>
 
       {/* Join Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-green-500/10 via-transparent to-cyan-500/10" id="join">
+      <section
+        className="py-12 md:py-16 bg-gradient-to-br from-green-500/10 via-transparent to-cyan-500/10"
+        id="join"
+      >
         <div className="container">
           <div className="max-w-[800px] mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">Join Nextronix</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-6">
+              Join Nextronix
+            </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-[600px] mx-auto">
-              Become a part of our robotics community and explore the exciting world of robotics, IoT, and automation.
-              No prior experience required - just bring your enthusiasm and willingness to learn!
+              Become a part of our robotics community and explore the exciting
+              world of robotics, IoT, and automation. No prior experience
+              required - just bring your enthusiasm and willingness to learn!
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" asChild>
@@ -728,5 +861,5 @@ export default function NextronixPage() {
         </div>
       </section>
     </>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Github, Linkedin, Twitter } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -15,23 +15,36 @@ export function SiteFooter() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              The official technical society of CSVTU UTD-1 Bhilai for tech enthusiasts, coders, and innovators.
+              The official technical society of CSVTU UTD-1 Bhilai for tech
+              enthusiasts, coders, and innovators.
             </p>
             <div className="flex space-x-3">
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://github.com" target="_blank" rel="noreferrer">
+                <Link
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://twitter.com" target="_blank" rel="noreferrer">
+                <Link
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Twitter className="h-5 w-5" />
                   <span className="sr-only">Twitter</span>
                 </Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://linkedin.com" target="_blank" rel="noreferrer">
+                <Link
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Link>
@@ -42,42 +55,66 @@ export function SiteFooter() {
             <h3 className="text-sm font-medium">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/about"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/events" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/events"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Events & Workshops
                 </Link>
               </li>
               <li>
-                <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/team"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Our Team
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/resources"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Resources
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/projects"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/gallery"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/blog"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Contact Us
                 </Link>
               </li>
@@ -103,12 +140,18 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/clubs/nextronix" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="https://nextronixutd.tech/"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Nextronix (Robotics Club)
                 </Link>
               </li>
               <li>
-                <Link href="/clubs/matlab" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/clubs/matlab"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Matlab Club
                 </Link>
               </li>
@@ -132,9 +175,15 @@ export function SiteFooter() {
           </div>
           <div className="space-y-4">
             <h3 className="text-sm font-medium">Subscribe to our newsletter</h3>
-            <p className="text-sm text-muted-foreground">Get weekly updates on tech trends, projects, and events.</p>
+            <p className="text-sm text-muted-foreground">
+              Get weekly updates on tech trends, projects, and events.
+            </p>
             <form className="space-y-2">
-              <Input type="email" placeholder="Enter your email" className="h-9" />
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                className="h-9"
+              />
               <Button type="submit" className="w-full">
                 Subscribe
               </Button>
@@ -143,18 +192,25 @@ export function SiteFooter() {
         </div>
         <div className="mt-12 border-t pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Programmers&apos; Paradise. All rights reserved.
+            © {new Date().getFullYear()} Programmers&apos; Paradise. All rights
+            reserved.
           </p>
           <div className="flex gap-4 text-xs text-muted-foreground">
-            <Link href="/privacy" className="hover:text-foreground transition-colors">
+            <Link
+              href="/privacy"
+              className="hover:text-foreground transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-foreground transition-colors">
+            <Link
+              href="/terms"
+              className="hover:text-foreground transition-colors"
+            >
               Terms of Service
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

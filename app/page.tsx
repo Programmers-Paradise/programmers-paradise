@@ -1,8 +1,15 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import {
   CalendarDays,
   Clock,
@@ -15,7 +22,7 @@ import {
   Share2,
   Users,
   Github,
-} from "lucide-react"
+} from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -31,8 +38,9 @@ export default function HomePage() {
             Programmers&apos; Paradise
           </h1>
           <p className="max-w-[700px] text-lg md:text-xl text-muted-foreground mb-8">
-            The official technical society for tech enthusiasts, coders, and innovators. Join us to explore, learn, and
-            build the future together.
+            The official technical society for tech enthusiasts, coders, and
+            innovators. Join us to explore, learn, and build the future
+            together.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button size="lg" asChild>
@@ -51,8 +59,12 @@ export default function HomePage() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight">Upcoming Events</h2>
-              <p className="text-muted-foreground mt-2">Join our workshops, hackathons, and tech talks</p>
+              <h2 className="text-3xl font-bold tracking-tight">
+                Upcoming Events
+              </h2>
+              <p className="text-muted-foreground mt-2">
+                Join our workshops, hackathons, and tech talks
+              </p>
             </div>
             <Button variant="ghost" className="group" asChild>
               <Link href="/events" className="flex items-center gap-2">
@@ -68,12 +80,17 @@ export default function HomePage() {
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge>Workshop</Badge>
-                  <Badge variant="outline" className="bg-green-500/10 text-green-500 border-green-500/20">
+                  <Badge
+                    variant="outline"
+                    className="bg-green-500/10 text-green-500 border-green-500/20"
+                  >
                     Registration Open
                   </Badge>
                 </div>
                 <CardTitle className="mt-4">AI/ML Workshop Series</CardTitle>
-                <CardDescription>Learn the fundamentals of AI and Machine Learning</CardDescription>
+                <CardDescription>
+                  Learn the fundamentals of AI and Machine Learning
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm">
@@ -101,12 +118,17 @@ export default function HomePage() {
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge>Hackathon</Badge>
-                  <Badge variant="outline" className="bg-yellow-500/10 text-yellow-500 border-yellow-500/20">
+                  <Badge
+                    variant="outline"
+                    className="bg-yellow-500/10 text-yellow-500 border-yellow-500/20"
+                  >
                     Coming Soon
                   </Badge>
                 </div>
                 <CardTitle className="mt-4">Code Fusion 2025</CardTitle>
-                <CardDescription>48-hour hackathon to build innovative solutions</CardDescription>
+                <CardDescription>
+                  48-hour hackathon to build innovative solutions
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm">
@@ -136,12 +158,17 @@ export default function HomePage() {
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge>Tech Talk</Badge>
-                  <Badge variant="outline" className="bg-blue-500/10 text-blue-500 border-blue-500/20">
+                  <Badge
+                    variant="outline"
+                    className="bg-blue-500/10 text-blue-500 border-blue-500/20"
+                  >
                     Free Entry
                   </Badge>
                 </div>
                 <CardTitle className="mt-4">Web3 & Blockchain Future</CardTitle>
-                <CardDescription>Industry experts discuss the future of decentralized web</CardDescription>
+                <CardDescription>
+                  Industry experts discuss the future of decentralized web
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm">
@@ -171,9 +198,12 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-muted/50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Technical Clubs</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">
+              Our Technical Clubs
+            </h2>
             <p className="text-muted-foreground max-w-[700px] mx-auto">
-              Explore our specialized clubs across different fields of technology
+              Explore our specialized clubs across different fields of
+              technology
             </p>
           </div>
 
@@ -185,14 +215,20 @@ export default function HomePage() {
                   <Code className="h-6 w-6 text-purple-500" />
                 </div>
                 <CardTitle>Programming & Workshop Club</CardTitle>
-                <CardDescription>AI, ML, and software development workshops</CardDescription>
+                <CardDescription>
+                  AI, ML, and software development workshops
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                Learn cutting-edge technologies through hands-on workshops, project-based learning, and expert sessions.
+                Learn cutting-edge technologies through hands-on workshops,
+                project-based learning, and expert sessions.
               </CardContent>
               <CardFooter>
                 <Button variant="ghost" className="group" asChild>
-                  <Link href="/clubs/programming-workshop" className="flex items-center gap-2">
+                  <Link
+                    href="/clubs/programming-workshop"
+                    className="flex items-center gap-2"
+                  >
                     Learn more
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -207,14 +243,20 @@ export default function HomePage() {
                   <Lightbulb className="h-6 w-6 text-blue-500" />
                 </div>
                 <CardTitle>Competitive Programming Club</CardTitle>
-                <CardDescription>Coding contests, problem-solving, and algorithmic thinking</CardDescription>
+                <CardDescription>
+                  Coding contests, problem-solving, and algorithmic thinking
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                Sharpen your problem-solving skills, participate in coding competitions, and learn efficient algorithms.
+                Sharpen your problem-solving skills, participate in coding
+                competitions, and learn efficient algorithms.
               </CardContent>
               <CardFooter>
                 <Button variant="ghost" className="group" asChild>
-                  <Link href="/clubs/competitive-programming" className="flex items-center gap-2">
+                  <Link
+                    href="/clubs/competitive-programming"
+                    className="flex items-center gap-2"
+                  >
                     Learn more
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -229,14 +271,20 @@ export default function HomePage() {
                   <Cpu className="h-6 w-6 text-green-500" />
                 </div>
                 <CardTitle>Nextronix (Robotics Club)</CardTitle>
-                <CardDescription>Robotics, IoT, automation, and embedded systems</CardDescription>
+                <CardDescription>
+                  Robotics, IoT, automation, and embedded systems
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                Build robots, IoT devices, and automated systems through practical projects and competitions.
+                Build robots, IoT devices, and automated systems through
+                practical projects and competitions.
               </CardContent>
               <CardFooter>
                 <Button variant="ghost" className="group" asChild>
-                  <Link href="/clubs/nextronix" className="flex items-center gap-2">
+                  <Link
+                    href="https://nextronixutd.tech/"
+                    className="flex items-center gap-2"
+                  >
                     Learn more
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -251,14 +299,21 @@ export default function HomePage() {
                   <Database className="h-6 w-6 text-yellow-500" />
                 </div>
                 <CardTitle>Matlab Club</CardTitle>
-                <CardDescription>Numerical computing, simulations, and engineering problem-solving</CardDescription>
+                <CardDescription>
+                  Numerical computing, simulations, and engineering
+                  problem-solving
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                Master numerical computing, simulations, and solve complex engineering problems using MATLAB.
+                Master numerical computing, simulations, and solve complex
+                engineering problems using MATLAB.
               </CardContent>
               <CardFooter>
                 <Button variant="ghost" className="group" asChild>
-                  <Link href="/clubs/matlab" className="flex items-center gap-2">
+                  <Link
+                    href="/clubs/matlab"
+                    className="flex items-center gap-2"
+                  >
                     Learn more
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -273,14 +328,20 @@ export default function HomePage() {
                   <Share2 className="h-6 w-6 text-cyan-500" />
                 </div>
                 <CardTitle>Blockchain & Web3 Club</CardTitle>
-                <CardDescription>dApps, smart contracts, and blockchain technologies</CardDescription>
+                <CardDescription>
+                  dApps, smart contracts, and blockchain technologies
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                Explore decentralized applications, smart contracts, and cutting-edge blockchain technologies.
+                Explore decentralized applications, smart contracts, and
+                cutting-edge blockchain technologies.
               </CardContent>
               <CardFooter>
                 <Button variant="ghost" className="group" asChild>
-                  <Link href="/clubs/blockchain-web3" className="flex items-center gap-2">
+                  <Link
+                    href="/clubs/blockchain-web3"
+                    className="flex items-center gap-2"
+                  >
                     Learn more
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -295,14 +356,20 @@ export default function HomePage() {
                   <Users className="h-6 w-6 text-pink-500" />
                 </div>
                 <CardTitle>PR & Outreach</CardTitle>
-                <CardDescription>Community engagement, events, and collaborations</CardDescription>
+                <CardDescription>
+                  Community engagement, events, and collaborations
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                Connect with the tech community, organize events, and build partnerships with industry leaders.
+                Connect with the tech community, organize events, and build
+                partnerships with industry leaders.
               </CardContent>
               <CardFooter>
                 <Button variant="ghost" className="group" asChild>
-                  <Link href="/clubs/pr-outreach" className="flex items-center gap-2">
+                  <Link
+                    href="/clubs/pr-outreach"
+                    className="flex items-center gap-2"
+                  >
                     Learn more
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -318,8 +385,12 @@ export default function HomePage() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight">Featured Projects</h2>
-              <p className="text-muted-foreground mt-2">Innovative solutions built by our members</p>
+              <h2 className="text-3xl font-bold tracking-tight">
+                Featured Projects
+              </h2>
+              <p className="text-muted-foreground mt-2">
+                Innovative solutions built by our members
+              </p>
             </div>
             <Button variant="ghost" className="group" asChild>
               <Link href="/projects" className="flex items-center gap-2">
@@ -347,18 +418,24 @@ export default function HomePage() {
                   <Badge variant="secondary">Embedded Systems</Badge>
                 </div>
                 <CardTitle>Smart Campus IoT System</CardTitle>
-                <CardDescription>Automated monitoring system for campus resources</CardDescription>
+                <CardDescription>
+                  Automated monitoring system for campus resources
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                An IoT-based solution that monitors electricity usage, water levels, and occupancy across campus
-                buildings.
+                An IoT-based solution that monitors electricity usage, water
+                levels, and occupancy across campus buildings.
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
                   <Link href="/projects/smart-campus">View Details</Link>
                 </Button>
                 <Button variant="ghost" size="sm" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </Link>
@@ -383,18 +460,24 @@ export default function HomePage() {
                   <Badge variant="secondary">NLP</Badge>
                 </div>
                 <CardTitle>AI Study Assistant</CardTitle>
-                <CardDescription>Personalized learning companion powered by AI</CardDescription>
+                <CardDescription>
+                  Personalized learning companion powered by AI
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                An AI-powered application that helps students create personalized study plans and provides intelligent
-                tutoring.
+                An AI-powered application that helps students create
+                personalized study plans and provides intelligent tutoring.
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
                   <Link href="/projects/ai-study-assistant">View Details</Link>
                 </Button>
                 <Button variant="ghost" size="sm" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </Link>
@@ -419,18 +502,24 @@ export default function HomePage() {
                   <Badge variant="secondary">Web3</Badge>
                 </div>
                 <CardTitle>Blockchain Voting System</CardTitle>
-                <CardDescription>Secure and transparent voting platform</CardDescription>
+                <CardDescription>
+                  Secure and transparent voting platform
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                A decentralized voting system built on blockchain technology for secure, transparent, and tamper-proof
-                elections.
+                A decentralized voting system built on blockchain technology for
+                secure, transparent, and tamper-proof elections.
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
                   <Link href="/projects/blockchain-voting">View Details</Link>
                 </Button>
                 <Button variant="ghost" size="sm" asChild>
-                  <Link href="https://github.com" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </Link>
@@ -445,10 +534,13 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-gradient-to-br from-purple-500/10 via-transparent to-cyan-500/10">
         <div className="container">
           <div className="max-w-[800px] mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Ready to join the tech revolution?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
+              Ready to join the tech revolution?
+            </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-[600px] mx-auto">
-              Become a part of Programmers' Paradise and unlock endless opportunities to learn, build, and grow with
-              like-minded tech enthusiasts.
+              Become a part of Programmers' Paradise and unlock endless
+              opportunities to learn, build, and grow with like-minded tech
+              enthusiasts.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" asChild>
@@ -462,5 +554,5 @@ export default function HomePage() {
         </div>
       </section>
     </>
-  )
+  );
 }

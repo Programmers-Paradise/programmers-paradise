@@ -1,5 +1,11 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Users,
   Calendar,
@@ -12,17 +18,19 @@ import {
   Presentation,
   FileText,
   Briefcase,
-} from "lucide-react"
+} from "lucide-react";
 
 export default function PROutreachClubPage() {
   return (
     <main className="container mx-auto px-4 py-12">
       <div className="space-y-6">
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight">PR & Outreach Club</h1>
+          <h1 className="text-4xl font-bold tracking-tight">
+            PR & Outreach Club
+          </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Connecting our technical community with the world through effective communication, events, and outreach
-            initiatives.
+            Connecting our technical community with the world through effective
+            communication, events, and outreach initiatives.
           </p>
         </div>
 
@@ -30,9 +38,11 @@ export default function PROutreachClubPage() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">About Our Club</h2>
             <p className="text-muted-foreground">
-              The PR & Outreach Club is dedicated to promoting the activities and achievements of Programmers' Paradise
-              to the wider community. We organize events, manage social media, create content, and build relationships
-              with industry partners and other educational institutions.
+              The PR & Outreach Club is dedicated to promoting the activities
+              and achievements of Programmers' Paradise to the wider community.
+              We organize events, manage social media, create content, and build
+              relationships with industry partners and other educational
+              institutions.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               {focusAreas.map((area) => (
@@ -80,14 +90,19 @@ export default function PROutreachClubPage() {
             </div>
           </TabsContent>
           <TabsContent value="team" className="space-y-4 pt-4">
-            <h3 className="text-2xl font-bold">Meet Our Team</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <h3 className="text-2xl font-bold text-center">Meet Our Team</h3>
+            <div className="flex flex-wrap justify-center gap-4">
               {teamMembers.map((member) => (
-                <Card key={member.name} className="border border-muted">
+                <Card
+                  key={member.name}
+                  className="border border-muted w-full sm:w-[320px]"
+                >
                   <CardHeader className="text-center pb-2">
                     <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-2">
                       <img
-                        src={member.avatar || "/placeholder.svg?height=96&width=96"}
+                        src={
+                          member.avatar || "/placeholder.svg?height=96&width=96"
+                        }
                         alt={member.name}
                         className="w-full h-full object-cover"
                       />
@@ -96,7 +111,9 @@ export default function PROutreachClubPage() {
                     <CardDescription>{member.role}</CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <p className="text-sm text-muted-foreground">{member.bio}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {member.bio}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -117,7 +134,9 @@ export default function PROutreachClubPage() {
                     <CardDescription>{initiative.description}</CardDescription>
                     <div className="mt-4">
                       <p className="text-sm font-medium">Impact:</p>
-                      <p className="text-sm text-muted-foreground">{initiative.impact}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {initiative.impact}
+                      </p>
                     </div>
                   </CardContent>
                 </Card>
@@ -132,7 +151,10 @@ export default function PROutreachClubPage() {
                   <h4 className="text-xl font-semibold">{year.year}</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {year.items.map((achievement) => (
-                      <Card key={achievement.title} className="border border-muted">
+                      <Card
+                        key={achievement.title}
+                        className="border border-muted"
+                      >
                         <CardHeader className="pb-2">
                           <CardTitle className="text-lg flex items-center gap-2">
                             <Award className="h-5 w-5 text-primary" />
@@ -140,7 +162,9 @@ export default function PROutreachClubPage() {
                           </CardTitle>
                         </CardHeader>
                         <CardContent>
-                          <CardDescription>{achievement.description}</CardDescription>
+                          <CardDescription>
+                            {achievement.description}
+                          </CardDescription>
                         </CardContent>
                       </Card>
                     ))}
@@ -154,8 +178,9 @@ export default function PROutreachClubPage() {
         <div className="mt-12 space-y-6">
           <h2 className="text-3xl font-bold text-center">Join Our Club</h2>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto">
-            Interested in public relations, event management, content creation, or community building? Join our PR &
-            Outreach Club to develop valuable skills and make an impact!
+            Interested in public relations, event management, content creation,
+            or community building? Join our PR & Outreach Club to develop
+            valuable skills and make an impact!
           </p>
           <div className="flex justify-center pt-4">
             <a
@@ -168,31 +193,35 @@ export default function PROutreachClubPage() {
         </div>
       </div>
     </main>
-  )
+  );
 }
 
 const focusAreas = [
   {
     title: "Event Management",
-    description: "Planning and executing tech events, workshops, and community gatherings.",
+    description:
+      "Planning and executing tech events, workshops, and community gatherings.",
     icon: Calendar,
   },
   {
     title: "Media Relations",
-    description: "Building relationships with media outlets to showcase our community's achievements.",
+    description:
+      "Building relationships with media outlets to showcase our community's achievements.",
     icon: Newspaper,
   },
   {
     title: "Social Media",
-    description: "Managing our online presence across various platforms to engage with our audience.",
+    description:
+      "Managing our online presence across various platforms to engage with our audience.",
     icon: Share2,
   },
   {
     title: "Community Outreach",
-    description: "Connecting with schools, colleges, and other tech communities for collaborations.",
+    description:
+      "Connecting with schools, colleges, and other tech communities for collaborations.",
     icon: Globe,
   },
-]
+];
 
 const activities = [
   {
@@ -222,74 +251,61 @@ const activities = [
   },
   {
     title: "Community Partnerships",
-    description: "Building relationships with other tech communities, educational institutions, and industry partners.",
+    description:
+      "Building relationships with other tech communities, educational institutions, and industry partners.",
   },
-]
+];
 
 const teamMembers = [
   {
-    name: "Alex Johnson",
-    role: "Club Lead",
-    bio: "Communications major with a passion for technology and community building.",
-    avatar: "/placeholder.svg?height=96&width=96",
+    name: "Rohit Rana",
+    role: "Design Head",
+    bio: "Batch: 2023-2027 | Branch: CSE(DS)\nEmail: rohitrananet@gmail.com",
+    github: "https://github.com/geekrrr",
+    linkedin: "https://www.linkedin.com/in/rohit-rana-26aa59317",
+    avatar: "/Technical_Team_Photos/RohitRana.webp",
   },
   {
-    name: "Samira Patel",
-    role: "Event Coordinator",
-    bio: "Experienced in organizing tech conferences and community meetups.",
-    avatar: "/placeholder.svg?height=96&width=96",
+    name: "Riya Singh",
+    role: "Social Media Coordinator",
+    bio: "Batch: 2023-2027 | Branch: CSE(DS)\nEmail: sendmailtoriya2104@gmail.com",
+    github: "https://github.com/riyalise",
+    linkedin: "https://www.linkedin.com/in/riya-singh-068927321/",
+    avatar: "/Technical_Team_Photos/RiyaSingh.webp",
+  },
+   {
+    name: "Aditya Verma",
+    role: "Editing Head",
+    bio: "Batch: 2023-2027 | Branch: CSE(AI)\nEmail: adityaverma04@gmail.com",
+    github: "https://github.com/D4rkglitch",
+    linkedin: "https://www.linkedin.com/in/aditya-verma-291114289",
+    avatar: "/Technical_Team_Photos/AdityaVerma.webp",
   },
   {
-    name: "Marcus Chen",
-    role: "Social Media Manager",
-    bio: "Digital marketing enthusiast with expertise in growing online communities.",
-    avatar: "/placeholder.svg?height=96&width=96",
+    name: "Dikesh Patel",
+    role: "Media Head",
+    bio: "Batch: 2024-2028 | Branch: CSE(AI)\nEmail: thedikesh@gmail.com",
+    github: "https://github.com/dksg07",
+    linkedin: "https://www.linkedin.com/in/dksg07",
+    avatar: "/Technical_Team_Photos/DikeshPatel.webp",
   },
-  {
-    name: "Olivia Rodriguez",
-    role: "Content Creator",
-    bio: "Skilled writer and videographer documenting our community's journey.",
-    avatar: "/placeholder.svg?height=96&width=96",
-  },
-  {
-    name: "Jamal Williams",
-    role: "Media Relations",
-    bio: "Journalism background with strong connections to tech publications.",
-    avatar: "/placeholder.svg?height=96&width=96",
-  },
-  {
-    name: "Emma Thompson",
-    role: "Outreach Coordinator",
-    bio: "Passionate about connecting students with industry opportunities.",
-    avatar: "/placeholder.svg?height=96&width=96",
-  },
-  {
-    name: "David Kim",
-    role: "Graphic Designer",
-    bio: "Creating visual assets that communicate our community's identity.",
-    avatar: "/placeholder.svg?height=96&width=96",
-  },
-  {
-    name: "Priya Sharma",
-    role: "Community Ambassador",
-    bio: "Representing our club at external events and building partnerships.",
-    avatar: "/placeholder.svg?height=96&width=96",
-  },
-]
+];
 
 const initiatives = [
   {
     title: "Tech Community Newsletter",
     description:
       "A monthly newsletter highlighting achievements, upcoming events, and opportunities within our community and the broader tech ecosystem.",
-    impact: "Reaches over 5,000 subscribers including students, alumni, and industry professionals.",
+    impact:
+      "Reaches over 5,000 subscribers including students, alumni, and industry professionals.",
     icon: FileText,
   },
   {
     title: "Annual Tech Showcase",
     description:
       "A flagship event where members present their projects to industry representatives, potential employers, and the wider community.",
-    impact: "Last year's showcase resulted in 15 job offers and 3 project sponsorships for our members.",
+    impact:
+      "Last year's showcase resulted in 15 job offers and 3 project sponsorships for our members.",
     icon: Presentation,
   },
   {
@@ -304,24 +320,27 @@ const initiatives = [
     title: "Tech Podcast Series",
     description:
       "A podcast featuring interviews with industry leaders, alumni success stories, and discussions on emerging technologies.",
-    impact: "Averages 2,500 listeners per episode with listeners from 25 countries.",
+    impact:
+      "Averages 2,500 listeners per episode with listeners from 25 countries.",
     icon: MessageSquare,
   },
   {
     title: "Community Documentation",
     description:
       "Photo and video documentation of all community events, creating a visual history of our growth and achievements.",
-    impact: "Created a comprehensive archive that has been used in university publications and recruitment materials.",
+    impact:
+      "Created a comprehensive archive that has been used in university publications and recruitment materials.",
     icon: Camera,
   },
   {
     title: "Industry Connect Program",
     description:
       "Building relationships with tech companies for sponsorships, mentorship opportunities, and potential recruitment.",
-    impact: "Established partnerships with 12 companies offering internships exclusively to our members.",
+    impact:
+      "Established partnerships with 12 companies offering internships exclusively to our members.",
     icon: Briefcase,
   },
-]
+];
 
 const achievements = [
   {
@@ -339,7 +358,8 @@ const achievements = [
       },
       {
         title: "Tech Fest Media Coverage",
-        description: "Secured coverage in 3 national tech publications for our annual technology festival.",
+        description:
+          "Secured coverage in 3 national tech publications for our annual technology festival.",
       },
     ],
   },
@@ -358,11 +378,13 @@ const achievements = [
       },
       {
         title: "Podcast Launch",
-        description: "Successfully launched our tech podcast, reaching 10,000+ downloads in the first season.",
+        description:
+          "Successfully launched our tech podcast, reaching 10,000+ downloads in the first season.",
       },
       {
         title: "Event Management Excellence",
-        description: "Organized 15 successful events with an average attendance of 200+ participants per event.",
+        description:
+          "Organized 15 successful events with an average attendance of 200+ participants per event.",
       },
     ],
   },
@@ -371,16 +393,19 @@ const achievements = [
     items: [
       {
         title: "Club Formation",
-        description: "Successfully established the PR & Outreach Club with an initial team of 8 dedicated members.",
+        description:
+          "Successfully established the PR & Outreach Club with an initial team of 8 dedicated members.",
       },
       {
         title: "First Tech Showcase",
-        description: "Organized our inaugural tech showcase featuring 25 student projects with 300+ attendees.",
+        description:
+          "Organized our inaugural tech showcase featuring 25 student projects with 300+ attendees.",
       },
       {
         title: "Media Relations Framework",
-        description: "Developed a comprehensive media relations strategy resulting in coverage in local publications.",
+        description:
+          "Developed a comprehensive media relations strategy resulting in coverage in local publications.",
       },
     ],
   },
-]
+];

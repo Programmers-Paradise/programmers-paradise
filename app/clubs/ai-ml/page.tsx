@@ -1,8 +1,22 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { CalendarDays, Code, Cpu, Database, FileCode2, type LucideIcon, Trophy } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  CalendarDays,
+  Code,
+  Cpu,
+  Database,
+  FileCode2,
+  type LucideIcon,
+  Trophy,
+} from "lucide-react";
 
 export default function AIMLClubPage() {
   return (
@@ -11,8 +25,9 @@ export default function AIMLClubPage() {
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold tracking-tight">AI & ML Club</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Exploring the frontiers of artificial intelligence and machine learning through hands-on projects,
-            workshops, and collaborative research.
+            Exploring the frontiers of artificial intelligence and machine
+            learning through hands-on projects, workshops, and collaborative
+            research.
           </p>
         </div>
 
@@ -20,9 +35,10 @@ export default function AIMLClubPage() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">About Our Club</h2>
             <p className="text-muted-foreground">
-              The AI & ML Club is dedicated to fostering a community of students passionate about artificial
-              intelligence and machine learning. We provide a platform for learning, experimentation, and innovation in
-              these cutting-edge fields.
+              The AI & ML Club is dedicated to fostering a community of students
+              passionate about artificial intelligence and machine learning. We
+              provide a platform for learning, experimentation, and innovation
+              in these cutting-edge fields.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               {focusAreas.map((area) => (
@@ -71,22 +87,77 @@ export default function AIMLClubPage() {
           </TabsContent>
           <TabsContent value="team" className="space-y-4 pt-4">
             <h3 className="text-2xl font-bold">Meet Our Team</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="flex justify-center gap-4">
               {teamMembers.map((member) => (
                 <Card key={member.name} className="border border-muted">
                   <CardHeader className="text-center pb-2">
                     <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-2">
                       <img
-                        src={member.avatar || "/placeholder.svg"}
+                        src={member.image || "/placeholder.svg"}
                         alt={member.name}
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <CardTitle className="text-lg">{member.name}</CardTitle>
-                    <CardDescription>{member.role}</CardDescription>
+                    <CardDescription>{member.position}</CardDescription>
                   </CardHeader>
-                  <CardContent className="text-center">
-                    <p className="text-sm text-muted-foreground">{member.bio}</p>
+                  <CardContent className="text-center space-y-1">
+                    <div className="text-sm text-muted-foreground">
+                      <span className="font-semibold">Batch:</span>{" "}
+                      {member.batch}
+                      <br />
+                      <span className="font-semibold">Branch:</span>{" "}
+                      {member.branch}
+                      <br />
+                      <span className="font-semibold">Email:</span>{" "}
+                      <a href={`mailto:${member.email}`} className="underline">
+                        {member.email}
+                      </a>
+                    </div>
+                    <div className="flex justify-center gap-2 pt-2">
+                      <a
+                        href={member.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="hover:underline flex items-center"
+                      >
+                        <span
+                          className="inline-block w-5 h-5 mr-1 text-gray-400"
+                          aria-label="GitHub"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-5 h-5"
+                          >
+                            <path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.425 2.867 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.274.098-2.656 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.338 1.909-1.295 2.748-1.025 2.748-1.025.546 1.382.202 2.402.1 2.656.64.7 1.028 1.595 1.028 2.688 0 3.847-2.338 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.579.688.481C19.135 20.188 22 16.437 22 12.012 22 6.484 17.523 2 12 2z" />
+                          </svg>
+                        </span>
+                        GitHub
+                      </a>
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="hover:underline flex items-center"
+                      >
+                        <span
+                          className="inline-block w-5 h-5 mr-1 text-gray-400"
+                          aria-label="LinkedIn"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-5 h-5"
+                          >
+                            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76c.97 0 1.75.79 1.75 1.76s-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z" />
+                          </svg>
+                        </span>
+                        LinkedIn
+                      </a>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -111,7 +182,10 @@ export default function AIMLClubPage() {
                   <CardContent>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
-                        <span key={tech} className="px-2 py-1 bg-muted rounded-md text-xs">
+                        <span
+                          key={tech}
+                          className="px-2 py-1 bg-muted rounded-md text-xs"
+                        >
                           {tech}
                         </span>
                       ))}
@@ -129,12 +203,16 @@ export default function AIMLClubPage() {
                   <CardHeader>
                     <div className="flex items-center gap-2">
                       <Trophy className="h-5 w-5 text-primary" />
-                      <CardTitle className="text-lg">{achievement.title}</CardTitle>
+                      <CardTitle className="text-lg">
+                        {achievement.title}
+                      </CardTitle>
                     </div>
                     <CardDescription>{achievement.date}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{achievement.description}</p>
+                    <p className="text-muted-foreground">
+                      {achievement.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -146,8 +224,8 @@ export default function AIMLClubPage() {
           <div className="text-center space-y-4 max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold">Join Our Club</h2>
             <p className="text-muted-foreground">
-              Interested in AI and machine learning? Join our club to learn, collaborate, and innovate with like-minded
-              peers.
+              Interested in AI and machine learning? Join our club to learn,
+              collaborate, and innovate with like-minded peers.
             </p>
             <div className="flex justify-center gap-4 pt-4">
               <Button asChild size="lg">
@@ -173,7 +251,9 @@ export default function AIMLClubPage() {
                   <CardDescription>{event.date}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">{event.description}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {event.description}
+                  </p>
                   <Button variant="outline" size="sm" asChild>
                     <Link href={event.link}>Learn More</Link>
                   </Button>
@@ -184,96 +264,103 @@ export default function AIMLClubPage() {
         </div>
       </div>
     </main>
-  )
+  );
 }
 
 type FocusArea = {
-  title: string
-  description: string
-  icon: LucideIcon
-}
+  title: string;
+  description: string;
+  icon: LucideIcon;
+};
 
 const focusAreas: FocusArea[] = [
   {
     title: "Deep Learning",
-    description: "Exploring neural networks, CNN, RNN, and transformer architectures for various applications.",
+    description:
+      "Exploring neural networks, CNN, RNN, and transformer architectures for various applications.",
     icon: Cpu,
   },
   {
     title: "Computer Vision",
-    description: "Working with image recognition, object detection, and visual data processing.",
+    description:
+      "Working with image recognition, object detection, and visual data processing.",
     icon: FileCode2,
   },
   {
     title: "Natural Language Processing",
-    description: "Building applications that understand, interpret, and generate human language.",
+    description:
+      "Building applications that understand, interpret, and generate human language.",
     icon: Code,
   },
   {
     title: "Data Science",
-    description: "Analyzing and visualizing data to extract meaningful insights and patterns.",
+    description:
+      "Analyzing and visualizing data to extract meaningful insights and patterns.",
     icon: Database,
   },
-]
+];
 
 const activities = [
   {
     title: "Weekly Workshops",
-    description: "Hands-on sessions covering various AI & ML topics, from basics to advanced techniques.",
+    description:
+      "Hands-on sessions covering various AI & ML topics, from basics to advanced techniques.",
   },
   {
     title: "Hackathons",
-    description: "Regular coding competitions focused on solving real-world problems using AI & ML.",
+    description:
+      "Regular coding competitions focused on solving real-world problems using AI & ML.",
   },
   {
     title: "Research Groups",
-    description: "Collaborative research on cutting-edge AI & ML topics with faculty mentorship.",
+    description:
+      "Collaborative research on cutting-edge AI & ML topics with faculty mentorship.",
   },
   {
     title: "Industry Talks",
-    description: "Guest lectures from industry professionals sharing insights and career advice.",
+    description:
+      "Guest lectures from industry professionals sharing insights and career advice.",
   },
   {
     title: "Project Showcases",
-    description: "Opportunities to demonstrate your AI & ML projects to peers and industry partners.",
+    description:
+      "Opportunities to demonstrate your AI & ML projects to peers and industry partners.",
   },
   {
     title: "Study Groups",
-    description: "Peer-led learning sessions to master complex AI & ML concepts and algorithms.",
+    description:
+      "Peer-led learning sessions to master complex AI & ML concepts and algorithms.",
   },
-]
+];
 
 const teamMembers = [
   {
-    name: "Alex Johnson",
-    role: "Club President",
-    bio: "ML researcher specializing in computer vision",
-    avatar: "/placeholder.svg?height=200&width=200",
+    name: "Sharad Singh Thakur",
+    position: "President (AI / ML Club)",
+    batch: "2023-2027",
+    branch: "CSE(AI)",
+    email: "sharadthakur265@gmail.com",
+    github: "https://github.com/FreakyOne700",
+    linkedin: "https://www.linkedin.com/in/sharad-thakur-9b23142a2/",
+    image: "/Technical_Team_Photos/SharadSinghThakur.webp",
   },
   {
-    name: "Samira Patel",
-    role: "Vice President",
-    bio: "NLP enthusiast with industry experience",
-    avatar: "/placeholder.svg?height=200&width=200",
+    name: "Abhay Singh Sisoodiya",
+    position: "Vice-President (AI / ML Club)",
+    batch: "2023-2027",
+    branch: "CSE(AI)",
+    email: "abhaysingh2005xyz@gmail.com",
+    github: "https://github.com/Sisoodiya",
+    linkedin: "https://www.linkedin.com/in/abhay-singh-sisoodiya-859a63299/",
+    image: "/Technical_Team_Photos/AbhaySinghSisoodiya.heic",
   },
-  {
-    name: "Marcus Chen",
-    role: "Technical Lead",
-    bio: "Deep learning specialist and Kaggle competitor",
-    avatar: "/placeholder.svg?height=200&width=200",
-  },
-  {
-    name: "Leila Rodriguez",
-    role: "Workshop Coordinator",
-    bio: "Passionate about making AI accessible to beginners",
-    avatar: "/placeholder.svg?height=200&width=200",
-  },
-]
+];
 
 const projects = [
   {
     title: "Emotion Recognition System",
-    description: "A deep learning model that recognizes human emotions from facial expressions in real-time.",
+    description:
+      "A deep learning model that recognizes human emotions from facial expressions in real-time.",
     image: "/placeholder.svg?height=300&width=500",
     technologies: ["TensorFlow", "OpenCV", "Python", "React"],
   },
@@ -286,17 +373,19 @@ const projects = [
   },
   {
     title: "Predictive Healthcare Assistant",
-    description: "An AI system that predicts potential health issues based on patient data and symptoms.",
+    description:
+      "An AI system that predicts potential health issues based on patient data and symptoms.",
     image: "/placeholder.svg?height=300&width=500",
     technologies: ["Scikit-learn", "Pandas", "Django", "D3.js"],
   },
   {
     title: "Autonomous Drone Navigation",
-    description: "A reinforcement learning system that enables drones to navigate complex environments autonomously.",
+    description:
+      "A reinforcement learning system that enables drones to navigate complex environments autonomously.",
     image: "/placeholder.svg?height=300&width=500",
     technologies: ["PyTorch", "ROS", "C++", "Computer Vision"],
   },
-]
+];
 
 const achievements = [
   {
@@ -323,25 +412,28 @@ const achievements = [
     description:
       "Received a $50,000 grant from the university to develop AI solutions for campus sustainability initiatives.",
   },
-]
+];
 
 const events = [
   {
     title: "Introduction to Neural Networks Workshop",
     date: "June 10, 2023 | 3:00 PM - 5:00 PM",
-    description: "A beginner-friendly workshop covering the fundamentals of neural networks with hands-on exercises.",
+    description:
+      "A beginner-friendly workshop covering the fundamentals of neural networks with hands-on exercises.",
     link: "/events",
   },
   {
     title: "AI Ethics Panel Discussion",
     date: "June 17, 2023 | 4:00 PM - 6:00 PM",
-    description: "Join industry experts and academics for a discussion on ethical considerations in AI development.",
+    description:
+      "Join industry experts and academics for a discussion on ethical considerations in AI development.",
     link: "/events",
   },
   {
     title: "Summer AI Hackathon",
     date: "July 1-2, 2023 | 9:00 AM - 9:00 PM",
-    description: "A 48-hour coding competition to build innovative AI solutions for environmental challenges.",
+    description:
+      "A 48-hour coding competition to build innovative AI solutions for environmental challenges.",
     link: "/events",
   },
-]
+];

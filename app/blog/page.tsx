@@ -1,11 +1,18 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Search, Filter, Calendar, Clock, ArrowRight } from "lucide-react"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Search, Filter, Calendar, Clock, ArrowRight } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function BlogPage() {
   return (
@@ -19,13 +26,17 @@ export default function BlogPage() {
               Insights, Tutorials & Tech News
             </h1>
             <p className="text-muted-foreground md:text-lg max-w-[700px] mx-auto mb-8">
-              Stay updated with the latest in technology, coding tips, project showcases, and insights from our
-              community of tech enthusiasts.
+              Stay updated with the latest in technology, coding tips, project
+              showcases, and insights from our community of tech enthusiasts.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <div className="relative flex-1">
                 <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-                <Input type="search" placeholder="Search articles..." className="pl-8" />
+                <Input
+                  type="search"
+                  placeholder="Search articles..."
+                  className="pl-8"
+                />
               </div>
               <Button variant="outline" className="flex gap-2">
                 <Filter className="h-4 w-4" />
@@ -58,18 +69,25 @@ export default function BlogPage() {
                 The Future of AI in Education: Transforming Learning Experiences
               </h2>
               <p className="text-muted-foreground">
-                Explore how artificial intelligence is revolutionizing education through personalized learning paths,
-                intelligent tutoring systems, and automated assessment tools. Discover the potential benefits and
-                challenges of AI integration in educational settings.
+                Explore how artificial intelligence is revolutionizing education
+                through personalized learning paths, intelligent tutoring
+                systems, and automated assessment tools. Discover the potential
+                benefits and challenges of AI integration in educational
+                settings.
               </p>
               <div className="flex items-center gap-4">
                 <Avatar className="h-10 w-10">
-                  <AvatarImage src="/placeholder.svg?height=40&width=40" alt="Author" />
+                  <AvatarImage
+                    src="/placeholder.svg?height=40&width=40"
+                    alt="Author"
+                  />
                   <AvatarFallback>AR</AvatarFallback>
                 </Avatar>
                 <div>
                   <p className="text-sm font-medium">Dr. Ananya Rao</p>
-                  <p className="text-xs text-muted-foreground">AI Research Lead</p>
+                  <p className="text-xs text-muted-foreground">
+                    AI Research Lead
+                  </p>
                 </div>
               </div>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
@@ -95,8 +113,12 @@ export default function BlogPage() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight">Latest Articles</h2>
-              <p className="text-muted-foreground mt-2">Fresh insights and tutorials from our community</p>
+              <h2 className="text-3xl font-bold tracking-tight">
+                Latest Articles
+              </h2>
+              <p className="text-muted-foreground mt-2">
+                Fresh insights and tutorials from our community
+              </p>
             </div>
           </div>
 
@@ -116,22 +138,33 @@ export default function BlogPage() {
                 <div className="flex items-center gap-2">
                   <Badge variant="outline">Web Dev</Badge>
                 </div>
-                <CardTitle className="line-clamp-2">Web Development Trends to Watch in 2025</CardTitle>
-                <CardDescription>Exploring the latest technologies shaping the web</CardDescription>
+                <CardTitle className="line-clamp-2">
+                  Web Development Trends to Watch in 2025
+                </CardTitle>
+                <CardDescription>
+                  Exploring the latest technologies shaping the web
+                </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-muted-foreground line-clamp-3">
-                  From WebAssembly to Edge Computing, discover the emerging technologies and practices that are
-                  transforming web development and how they'll impact the industry in 2025 and beyond.
+                  From WebAssembly to Edge Computing, discover the emerging
+                  technologies and practices that are transforming web
+                  development and how they'll impact the industry in 2025 and
+                  beyond.
                 </p>
                 <div className="flex items-center gap-4 mt-4">
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Author" />
+                    <AvatarImage
+                      src="/placeholder.svg?height=32&width=32"
+                      alt="Author"
+                    />
                     <AvatarFallback>RV</AvatarFallback>
                   </Avatar>
                   <div>
                     <p className="text-sm font-medium">Rahul Verma</p>
-                    <p className="text-xs text-muted-foreground">Web Developer</p>
+                    <p className="text-xs text-muted-foreground">
+                      Web Developer
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -162,22 +195,33 @@ export default function BlogPage() {
                 <div className="flex items-center gap-2">
                   <Badge variant="outline">Blockchain</Badge>
                 </div>
-                <CardTitle className="line-clamp-2">Beyond Cryptocurrency: Practical Blockchain Applications</CardTitle>
-                <CardDescription>Real-world use cases for blockchain technology</CardDescription>
+                <CardTitle className="line-clamp-2">
+                  Beyond Cryptocurrency: Practical Blockchain Applications
+                </CardTitle>
+                <CardDescription>
+                  Real-world use cases for blockchain technology
+                </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-muted-foreground line-clamp-3">
-                  Blockchain technology extends far beyond cryptocurrencies. Explore how industries from supply chain to
-                  healthcare are leveraging blockchain for transparency, security, and efficiency.
+                  Blockchain technology extends far beyond cryptocurrencies.
+                  Explore how industries from supply chain to healthcare are
+                  leveraging blockchain for transparency, security, and
+                  efficiency.
                 </p>
                 <div className="flex items-center gap-4 mt-4">
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Author" />
+                    <AvatarImage
+                      src="/placeholder.svg?height=32&width=32"
+                      alt="Author"
+                    />
                     <AvatarFallback>KM</AvatarFallback>
                   </Avatar>
                   <div>
                     <p className="text-sm font-medium">Karan Malhotra</p>
-                    <p className="text-xs text-muted-foreground">Blockchain Developer</p>
+                    <p className="text-xs text-muted-foreground">
+                      Blockchain Developer
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -209,22 +253,33 @@ export default function BlogPage() {
                   <Badge variant="outline">IoT</Badge>
                   <Badge variant="outline">Security</Badge>
                 </div>
-                <CardTitle className="line-clamp-2">Securing the Internet of Things: Best Practices</CardTitle>
-                <CardDescription>Protecting connected devices from vulnerabilities</CardDescription>
+                <CardTitle className="line-clamp-2">
+                  Securing the Internet of Things: Best Practices
+                </CardTitle>
+                <CardDescription>
+                  Protecting connected devices from vulnerabilities
+                </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-muted-foreground line-clamp-3">
-                  As IoT devices proliferate, security concerns grow. Learn essential strategies for securing IoT
-                  ecosystems, from encryption and authentication to regular updates and network segmentation.
+                  As IoT devices proliferate, security concerns grow. Learn
+                  essential strategies for securing IoT ecosystems, from
+                  encryption and authentication to regular updates and network
+                  segmentation.
                 </p>
                 <div className="flex items-center gap-4 mt-4">
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Author" />
+                    <AvatarImage
+                      src="/placeholder.svg?height=32&width=32"
+                      alt="Author"
+                    />
                     <AvatarFallback>RS</AvatarFallback>
                   </Avatar>
                   <div>
-                    <p className="text-sm font-medium">Rajat Singh</p>
-                    <p className="text-xs text-muted-foreground">IoT Specialist</p>
+                    <p className="text-sm font-medium">Manoj Kumar Sinha</p>
+                    <p className="text-xs text-muted-foreground">
+                      IoT Specialist
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -256,22 +311,32 @@ export default function BlogPage() {
                   <Badge variant="outline">Python</Badge>
                   <Badge variant="outline">Data Science</Badge>
                 </div>
-                <CardTitle className="line-clamp-2">Data Analysis with Python: A Beginner's Guide</CardTitle>
-                <CardDescription>Getting started with data manipulation and visualization</CardDescription>
+                <CardTitle className="line-clamp-2">
+                  Data Analysis with Python: A Beginner's Guide
+                </CardTitle>
+                <CardDescription>
+                  Getting started with data manipulation and visualization
+                </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-muted-foreground line-clamp-3">
-                  This tutorial introduces beginners to data analysis using Python, covering essential libraries like
-                  Pandas, NumPy, and Matplotlib with practical examples and step-by-step guidance.
+                  This tutorial introduces beginners to data analysis using
+                  Python, covering essential libraries like Pandas, NumPy, and
+                  Matplotlib with practical examples and step-by-step guidance.
                 </p>
                 <div className="flex items-center gap-4 mt-4">
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Author" />
+                    <AvatarImage
+                      src="/placeholder.svg?height=32&width=32"
+                      alt="Author"
+                    />
                     <AvatarFallback>PS</AvatarFallback>
                   </Avatar>
                   <div>
                     <p className="text-sm font-medium">Priya Sharma</p>
-                    <p className="text-xs text-muted-foreground">Data Scientist</p>
+                    <p className="text-xs text-muted-foreground">
+                      Data Scientist
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -302,22 +367,33 @@ export default function BlogPage() {
                 <div className="flex items-center gap-2">
                   <Badge variant="outline">Mobile Dev</Badge>
                 </div>
-                <CardTitle className="line-clamp-2">Flutter vs React Native: Choosing the Right Framework</CardTitle>
-                <CardDescription>Comparing popular cross-platform development options</CardDescription>
+                <CardTitle className="line-clamp-2">
+                  Flutter vs React Native: Choosing the Right Framework
+                </CardTitle>
+                <CardDescription>
+                  Comparing popular cross-platform development options
+                </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-muted-foreground line-clamp-3">
-                  Deciding between Flutter and React Native? This comprehensive comparison examines performance,
-                  development experience, community support, and use cases to help you make an informed choice.
+                  Deciding between Flutter and React Native? This comprehensive
+                  comparison examines performance, development experience,
+                  community support, and use cases to help you make an informed
+                  choice.
                 </p>
                 <div className="flex items-center gap-4 mt-4">
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Author" />
+                    <AvatarImage
+                      src="/placeholder.svg?height=32&width=32"
+                      alt="Author"
+                    />
                     <AvatarFallback>AK</AvatarFallback>
                   </Avatar>
                   <div>
                     <p className="text-sm font-medium">Amit Kumar</p>
-                    <p className="text-xs text-muted-foreground">Mobile Developer</p>
+                    <p className="text-xs text-muted-foreground">
+                      Mobile Developer
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -348,22 +424,32 @@ export default function BlogPage() {
                 <div className="flex items-center gap-2">
                   <Badge variant="outline">Cybersecurity</Badge>
                 </div>
-                <CardTitle className="line-clamp-2">Essential Cybersecurity Practices for Developers</CardTitle>
-                <CardDescription>Building secure applications from the ground up</CardDescription>
+                <CardTitle className="line-clamp-2">
+                  Essential Cybersecurity Practices for Developers
+                </CardTitle>
+                <CardDescription>
+                  Building secure applications from the ground up
+                </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-muted-foreground line-clamp-3">
-                  Security should be integrated throughout the development lifecycle. Learn the essential cybersecurity
-                  practices every developer should follow to create robust, secure applications.
+                  Security should be integrated throughout the development
+                  lifecycle. Learn the essential cybersecurity practices every
+                  developer should follow to create robust, secure applications.
                 </p>
                 <div className="flex items-center gap-4 mt-4">
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Author" />
+                    <AvatarImage
+                      src="/placeholder.svg?height=32&width=32"
+                      alt="Author"
+                    />
                     <AvatarFallback>VJ</AvatarFallback>
                   </Avatar>
                   <div>
                     <p className="text-sm font-medium">Vikram Joshi</p>
-                    <p className="text-xs text-muted-foreground">Security Expert</p>
+                    <p className="text-xs text-muted-foreground">
+                      Security Expert
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -393,7 +479,9 @@ export default function BlogPage() {
       <section className="py-12 md:py-16 bg-muted/50">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold tracking-tight">Browse by Category</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Browse by Category
+            </h2>
             <p className="text-muted-foreground mt-2 max-w-[700px] mx-auto">
               Explore articles by topic to find exactly what you're looking for
             </p>
@@ -417,7 +505,9 @@ export default function BlogPage() {
                       <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
                     </svg>
                   </div>
-                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">Web Development</h3>
+                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">
+                    Web Development
+                  </h3>
                   <p className="text-xs text-muted-foreground">24 articles</p>
                 </CardContent>
               </Card>
@@ -437,11 +527,20 @@ export default function BlogPage() {
                       strokeLinejoin="round"
                       className="h-6 w-6 text-primary"
                     >
-                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                      <rect
+                        x="5"
+                        y="2"
+                        width="14"
+                        height="20"
+                        rx="2"
+                        ry="2"
+                      ></rect>
                       <line x1="12" y1="18" x2="12" y2="18"></line>
                     </svg>
                   </div>
-                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">Mobile Development</h3>
+                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">
+                    Mobile Development
+                  </h3>
                   <p className="text-xs text-muted-foreground">18 articles</p>
                 </CardContent>
               </Card>
@@ -466,7 +565,9 @@ export default function BlogPage() {
                       <line x1="12" y1="19" x2="12" y2="22"></line>
                     </svg>
                   </div>
-                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">AI & Machine Learning</h3>
+                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">
+                    AI & Machine Learning
+                  </h3>
                   <p className="text-xs text-muted-foreground">22 articles</p>
                 </CardContent>
               </Card>
@@ -486,11 +587,20 @@ export default function BlogPage() {
                       strokeLinejoin="round"
                       className="h-6 w-6 text-primary"
                     >
-                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <rect
+                        x="2"
+                        y="7"
+                        width="20"
+                        height="14"
+                        rx="2"
+                        ry="2"
+                      ></rect>
                       <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                     </svg>
                   </div>
-                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">Blockchain & Web3</h3>
+                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">
+                    Blockchain & Web3
+                  </h3>
                   <p className="text-xs text-muted-foreground">15 articles</p>
                 </CardContent>
               </Card>
@@ -517,7 +627,9 @@ export default function BlogPage() {
                       <line x1="16" y1="16" x2="16" y2="16"></line>
                     </svg>
                   </div>
-                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">IoT & Robotics</h3>
+                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">
+                    IoT & Robotics
+                  </h3>
                   <p className="text-xs text-muted-foreground">12 articles</p>
                 </CardContent>
               </Card>
@@ -540,7 +652,9 @@ export default function BlogPage() {
                       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                     </svg>
                   </div>
-                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">Cybersecurity</h3>
+                  <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">
+                    Cybersecurity
+                  </h3>
                   <p className="text-xs text-muted-foreground">16 articles</p>
                 </CardContent>
               </Card>
@@ -553,13 +667,20 @@ export default function BlogPage() {
       <section className="py-12 md:py-16">
         <div className="container">
           <div className="max-w-[800px] mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">Subscribe to Our Newsletter</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-6">
+              Subscribe to Our Newsletter
+            </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-[600px] mx-auto">
-              Get the latest articles, tutorials, and tech news delivered directly to your inbox. Stay updated with the
-              rapidly evolving world of technology.
+              Get the latest articles, tutorials, and tech news delivered
+              directly to your inbox. Stay updated with the rapidly evolving
+              world of technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <Input type="email" placeholder="Enter your email" className="flex-1" />
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1"
+              />
               <Button>Subscribe</Button>
             </div>
             <p className="text-xs text-muted-foreground mt-4">
@@ -577,10 +698,13 @@ export default function BlogPage() {
       <section className="py-12 md:py-16 bg-gradient-to-br from-purple-500/10 via-transparent to-cyan-500/10">
         <div className="container">
           <div className="max-w-[800px] mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">Write for Programmers' Paradise</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-6">
+              Write for Programmers' Paradise
+            </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-[600px] mx-auto">
-              Share your knowledge and expertise with our community. We welcome articles, tutorials, and insights from
-              tech enthusiasts, students, and professionals.
+              Share your knowledge and expertise with our community. We welcome
+              articles, tutorials, and insights from tech enthusiasts, students,
+              and professionals.
             </p>
             <Button size="lg" asChild>
               <Link href="/blog/contribute">Become a Contributor</Link>
@@ -589,5 +713,5 @@ export default function BlogPage() {
         </div>
       </section>
     </>
-  )
+  );
 }

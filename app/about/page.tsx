@@ -183,7 +183,7 @@ export default function AboutPage() {
                     <li>Participation in robotics competitions</li>
                   </ul>
                   <Button className="mt-4" asChild>
-                    <Link href="/clubs/nextronix">Learn More</Link>
+                    <Link href="https://nextronixutd.tech/">Learn More</Link>
                   </Button>
                 </CardContent>
               </Card>
