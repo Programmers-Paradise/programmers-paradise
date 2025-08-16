@@ -24,6 +24,69 @@ import {
   Github,
 } from "lucide-react";
 
+const technicalCouncil = [
+  {
+    name: "Abhinav Shukla",
+    position: "Head of Technical Council",
+    batch: "2023-2027",
+    branch: "CSE(AI)",
+    email: "student2.ai@csvtu.ac.in",
+    github: "https://github.com/maxprogrammer007",
+    linkedin: "https://www.linkedin.com/in/maxprogrammer007",
+    image: "/Technical_Team_Photos/AbhinavShukla.webp",
+  },
+  {
+    name: "Harsh Sharma",
+    position: "General Secretary",
+    batch: "2023-2027",
+    branch: "CSE(AI)",
+    email: "student3.ai@csvtu.ac.in",
+    github: "https://github.com/swayamprogramator",
+    linkedin: "https://www.linkedin.com/in/harsh-sharma-a159a9292",
+    image: "/Technical_Team_Photos/HarshSharma.webp",
+  },
+  {
+    name: "Aksh Agrawal",
+    position: "Technical Secretary",
+    batch: "2024-2028",
+    branch: "CSE(DS)",
+    email: "aksh.300012824005@csvtu.ac.in",
+    github: "https://github.com/Aksh-Agrawal",
+    linkedin: "https://www.linkedin.com/in/akshagr10/",
+    image: "/Technical_Team_Photos/AkshAgrawal.webp",
+  },
+  {
+    name: "Doorvi Sahu",
+    position: "PR and Outreach Secretary",
+    batch: "2024-2028",
+    branch: "CSE(AI)",
+    email: "doorvisahu02@gmail.com",
+    github: "https://github.com/DOORVI02",
+    linkedin: "https://www.linkedin.com/in/doorvi-s-780143327",
+    image: "/Technical_Team_Photos/DoorviSahu.webp",
+  },
+  {
+    name: "Ayush Dhruw",
+    position: "Event Secretary",
+    batch: "2023-2027",
+    branch: "CSE(DS)",
+    email: "dhruwayush71@gmail.com",
+    github: "https://github.com/DataSorcerer08",
+    linkedin: "https://www.linkedin.com/in/ayush-dhruw?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    image: "/Technical_Team_Photos/AyushDhruw2.webp",
+  },
+  {
+    name: "Riya Singh",
+    position: "Social Media Coordinator",
+    batch: "2023-2027",
+    branch: "CSE(DS)",
+    email: "sendmailtoriya2104@gmail.com",
+    github: "https://github.com/riyalise",
+    linkedin: "https://www.linkedin.com/in/riya-singh-068927321/",
+    image: "/Technical_Team_Photos/RiyaSingh.webp",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -52,6 +115,51 @@ export default function HomePage() {
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-10" />
+      </section>
+
+      {/* Technical Council Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Technical Council</h2>
+            <p className="text-muted-foreground max-w-[700px] mx-auto">Meet the members of our technical council</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {technicalCouncil.map((member) => (
+              <Card key={member.name} className="border border-muted text-center">
+                <CardHeader className="pb-2">
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-2">
+                    <img src={member.image || "/placeholder.svg"} alt={member.name} className="w-full h-full object-cover" />
+                  </div>
+                  <CardTitle className="text-lg">{member.name}</CardTitle>
+                  <CardDescription>{member.position}</CardDescription>
+                </CardHeader>
+                <CardContent className="text-center space-y-2">
+                  <div className="text-sm text-muted-foreground">
+                    <div><span className="font-semibold">Batch:</span> {member.batch}</div>
+                    <div><span className="font-semibold">Branch:</span> {member.branch}</div>
+                    <div>
+                      <span className="font-semibold">Email:</span> <a href={`mailto:${member.email}`} className="underline">{member.email}</a>
+                    </div>
+                  </div>
+                  <div className="flex justify-center gap-4 pt-2">
+                    <a href={member.github} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-200">
+                      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
+                        <path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.425 2.867 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.274.098-2.656 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.338 1.909-1.295 2.748-1.025 2.748-1.025.546 1.382.202 2.402.1 2.656.64.7 1.028 1.595 1.028 2.688 0 3.847-2.338 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.579.688.481C19.135 20.188 22 16.437 22 12.012 22 6.484 17.523 2 12 2z" />
+                      </svg>
+                    </a>
+                    <a href={member.linkedin} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-200">
+                      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
+                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76c.97 0 1.75.79 1.75 1.76s-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z" />
+                      </svg>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Featured Events Section */}
@@ -399,6 +507,7 @@ export default function HomePage() {
               </Link>
             </Button>
           </div>
+        </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Project Card 1 */}
@@ -527,9 +636,7 @@ export default function HomePage() {
               </CardFooter>
             </Card>
           </div>
-        </div>
-      </section>
-
+        </section>
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-purple-500/10 via-transparent to-cyan-500/10">
         <div className="container">

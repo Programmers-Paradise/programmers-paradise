@@ -265,14 +265,6 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/rohit-rana-26aa59317",
     avatar: "/Technical_Team_Photos/RohitRana.webp",
   },
-  {
-    name: "Riya Singh",
-    role: "Social Media Coordinator",
-    bio: "Batch: 2023-2027 | Branch: CSE(DS)\nEmail: sendmailtoriya2104@gmail.com",
-    github: "https://github.com/riyalise",
-    linkedin: "https://www.linkedin.com/in/riya-singh-068927321/",
-    avatar: "/Technical_Team_Photos/RiyaSingh.webp",
-  },
    {
     name: "Aditya Verma",
     role: "Editing Head",
