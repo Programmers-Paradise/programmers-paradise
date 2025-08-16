@@ -36,6 +36,16 @@ const technicalCouncil = [
     image: "/Technical_Team_Photos/AbhinavShukla.webp",
   },
   {
+    name: "Anoushka Chatterjee",
+    position: "Council Advisor",
+    batch: "2022-2026",
+    branch: "CSE(DS)",
+    email: "anoushka19c@gmail.com",
+    github: "https://github.com/anoushkaacc",
+    linkedin: "https://www.linkedin.com/in/anoushkaacc",
+    image: "/Technical_Team_Photos/AnoushkaChatterjee.webp",
+  },
+  {
     name: "Harsh Sharma",
     position: "General Secretary",
     batch: "2023-2027",
@@ -74,6 +84,16 @@ const technicalCouncil = [
     github: "https://github.com/DataSorcerer08",
     linkedin: "https://www.linkedin.com/in/ayush-dhruw?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/Technical_Team_Photos/AyushDhruw2.webp",
+  },
+   {
+    name: "Roshan Khatri",
+    position: "Event Secretary",
+    batch: "2023-2027",
+    branch: "CSE(AI)",
+    email: "roshan.300012723047@csvtu.ac.in",
+    github: "https://github.com/Roshan7869",
+    linkedin: "https://www.linkedin.com/in/roshan-khatri-undefined-577132284/",
+    image: "/Technical_Team_Photos/RoshanKhatri.webp",
   },
   {
     name: "Riya Singh",
