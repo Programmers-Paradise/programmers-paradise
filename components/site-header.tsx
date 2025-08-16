@@ -37,6 +37,10 @@ const mainNavItems = [
     href: "/projects",
   },
   {
+    title: "Merchandise",
+    href: "/merchandise",
+  },
+  {
     title: "Resources",
     href: "/resources",
   },
