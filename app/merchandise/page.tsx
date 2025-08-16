@@ -35,7 +35,8 @@ export default function MerchandisePage() {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-3xl font-bold">Merchandise</h1>
         <p className="text-muted-foreground mt-2">
-          Grab official Programmers' Paradise gear — tees, hoodies, and stickers.
+          Grab official Programmers' Paradise gear — tees, hoodies, and
+          stickers.
         </p>
         <div className="mt-6 flex justify-center gap-3">
           <Badge>Official</Badge>
@@ -47,10 +48,18 @@ export default function MerchandisePage() {
         {products.map((p) => (
           <div key={p.id} className="rounded-lg border p-4 flex flex-col">
             <div className="relative h-40 w-full mb-4 overflow-hidden rounded-md bg-muted">
-              <Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain" />
+              <Image
+                src={p.image}
+                alt={p.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-contain"
+              />
             </div>
             <h3 className="text-lg font-medium">{p.title}</h3>
-            <p className="text-sm text-muted-foreground mt-1 flex-1">{p.description}</p>
+            <p className="text-sm text-muted-foreground mt-1 flex-1">
+              {p.description}
+            </p>
             <div className="mt-4 flex items-center justify-between">
               <div className="text-lg font-semibold">₹{p.price}</div>
               <div className="flex items-center gap-2">
