@@ -6,17 +6,5 @@
   package = "@netlify/plugin-nextjs"
 
 [build.environment]
-  NEXT_USE_NETLIFY_EDGE = "true"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
-  force = false
-
-[context.production]
-  environment = { NODE_ENV = "production" }
-
-[context.deployment]
-  environment = { NODE_ENV = "production" }
+  NODE_ENV = "production"
+  NETLIFY_NEXT_PLUGIN_SKIP = "false"
