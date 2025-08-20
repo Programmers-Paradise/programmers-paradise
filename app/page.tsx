@@ -97,7 +97,7 @@ const technicalCouncil = [
   },
   {
     name: "Riya Singh",
-    position: "Social Media Coordinator",
+    position: "Media Secretary",
     batch: "2023-2027",
     branch: "CSE(DS)",
     email: "sendmailtoriya2104@gmail.com",
