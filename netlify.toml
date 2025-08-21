@@ -8,3 +8,16 @@
 [build.environment]
   NODE_ENV = "production"
   NETLIFY_NEXT_PLUGIN_SKIP = "false"
+
+# Redirect rules
+[[redirects]]
+  from = "https://www.programmers-paradise.tech/*"
+  to = "https://programmers-paradise.tech/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://programmers-paradise.netlify.app/*"
+  to = "https://programmers-paradise.tech/:splat"
+  status = 301
+  force = true

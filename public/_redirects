@@ -1,0 +1,5 @@
+# Redirect www to non-www
+https://www.programmers-paradise.tech/* https://programmers-paradise.tech/:splat 301!
+
+# Redirect default Netlify subdomain to primary domain
+https://programmers-paradise.netlify.app/* https://programmers-paradise.tech/:splat 301!
