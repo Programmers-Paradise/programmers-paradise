@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -114,7 +115,14 @@ export function SiteHeader() {
           )}
         >
           <div className="flex items-center gap-6 md:gap-10">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-3">
+              <Image
+                src="/PP_Logo.png"
+                alt="Programmers' Paradise Logo"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
               <span className="font-bold text-xl bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent leading-relaxed py-2 inline-block min-h-[2rem]">
                 Programmers&apos; Paradise
               </span>
