@@ -117,7 +117,7 @@ export default function HomePage() {
           <Badge className="mb-4" variant="outline">
             CSVTU UTD-1 Bhilai
           </Badge>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent animate-gradient">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent animate-gradient leading-relaxed py-3">
             Programmers&apos; Paradise
           </h1>
           <p className="max-w-[700px] text-lg md:text-xl text-muted-foreground mb-8">

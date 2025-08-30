@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { useMobile } from "@/hooks/use-mobile";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -88,7 +88,6 @@ export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const isMobile = useMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,19 +103,19 @@ export function SiteHeader() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 w-full pt-4">
-      <div className="container">
+    <header className="sticky top-0 z-50 w-full py-4">
+      <div className="container mx-auto px-4">
         <div
           className={cn(
-            "flex h-14 items-center justify-between rounded-full px-6 transition-all duration-300 mx-auto max-w-5xl",
+            "flex h-14 items-center justify-between rounded-full px-6 transition-all duration-300 mx-auto max-w-6xl",
             isScrolled
-              ? "bg-background/90 backdrop-blur-md border border-border/60 shadow-lg shadow-black/5"
-              : "bg-background/70 backdrop-blur-sm border border-border/40 shadow-sm"
+              ? "bg-background/98 backdrop-blur-md border border-border/70 shadow-lg shadow-black/10"
+              : "bg-background/90 backdrop-blur-sm border border-border/50 shadow-sm"
           )}
         >
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold text-xl bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
+              <span className="font-bold text-xl bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent leading-relaxed py-2 inline-block min-h-[2rem]">
                 Programmers&apos; Paradise
               </span>
             </Link>
