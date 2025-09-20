@@ -528,9 +528,9 @@ export default function JoinPage() {
               </CardContent>
               <CardFooter>
                 <div className="w-full text-center">
-                  <span className="block text-2xl font-bold mb-2">₹500</span>
+                  <span className="block text-2xl font-bold mb-2">Free</span>
                   <span className="text-sm text-muted-foreground">
-                    Annual membership fee
+                    No membership fee
                   </span>
                 </div>
               </CardFooter>
@@ -902,10 +902,10 @@ export default function JoinPage() {
               <AccordionItem value="item-2">
                 <AccordionTrigger>Is there a membership fee?</AccordionTrigger>
                 <AccordionContent>
-                  General membership is free. However, specialized club
-                  memberships have an annual fee of ₹500 to cover resources,
-                  equipment, and activities. This fee helps us maintain our
-                  facilities and provide quality experiences for our members.
+                  All memberships at Programmers' Paradise are completely free! 
+                  Whether you choose general membership or join specialized clubs, 
+                  there are no membership fees. We believe in making technical 
+                  education and opportunities accessible to all students.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
